@@ -36,7 +36,7 @@ app.use(session({
   maxAge: Date.now() + (86400 * 1000),
 }));
 
-app.use('/login',(req,res,next) => { if(req.session.isAuthenticated) res.redirect('/menu'); next();}, loginRouter);
+app.use('/login', loginRouter);
 app.use(isAuthenticated);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
