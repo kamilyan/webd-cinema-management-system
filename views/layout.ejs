@@ -1,0 +1,17 @@
+<!-- Top Components -->
+<%- include ./partials/head.ejs %>
+<% if ( page != "login") { %>
+<%- include ./partials/header.ejs %>
+<% } %>
+
+<!-- Content Area -->
+<main class="container">
+    
+    <%- include('content/'+page); -%>
+
+</main> 
+    
+<!-- Bottom components -->
+<%- include ./partials/scripts.ejs %>
+<%- include ./partials/footer.ejs %>
+<%- include ./partials/bottom.ejs %>

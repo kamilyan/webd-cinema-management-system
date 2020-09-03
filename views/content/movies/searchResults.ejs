@@ -1,0 +1,30 @@
+<div class="container">
+  <table class="table table-condensed table-bordered my-4">
+    <thead>
+      <tr>
+        <th>Required Movies</th>
+        <th>Same Genres Movies</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% for(var i=0; i < data.selectedMovies.length; i++) { %>
+      <tr>
+          <td>
+               <a href="movieData/<%= data.selectedMovies[i].id %>" >
+                   <%= data.selectedMovies[i].name %>
+               </a>
+               <br>
+       </td>
+          <td>
+            <% for(let j=0; j < data.sameGenersMovies[i].length; j++) { %>
+               <a href="movieData/<%= data.sameGenersMovies[i][j].id %>" >
+                   <%= data.sameGenersMovies[i][j].name %>
+               </a>
+               <br>
+           <% } %>
+       </td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>

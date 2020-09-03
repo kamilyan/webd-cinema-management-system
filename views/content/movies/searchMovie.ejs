@@ -1,0 +1,33 @@
+<div class="row justify-content-md-center my-4">
+  <div class="col-4">
+      <h4 class="my-4" >Search movie</h4>
+        <form autocomplete="off" action="/movies/searchMovie" method="post">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" >
+            <div class="form-group my-4">
+              <label for="languages">Language:</label>
+              <select name="languages" id="languages">
+                <option value="language">Choose language</option>
+                <option value="hebrew">Hebrew</option>
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="spanish">Spanish</option>
+                <option value="russion">Russian</option>
+              </select>
+            </div>
+            <div class="form-group my-4">
+              <label for="genres">Genre:</label>
+              <select name="genres" id="genres">
+                <option value="genre">Choose genre</option>
+                <option value="comedy">Comedy</option>
+                <option value="action">Action</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="drama">Drama</option>
+                <option value="horrors">Horror</option>
+              </select>
+            </div>
+              <input type="submit" class="btn btn-success" value="Search"><br><br>
+              <a href="menu" class="text-info"> Back </a>
+        </form>
+  </div>
+</div>

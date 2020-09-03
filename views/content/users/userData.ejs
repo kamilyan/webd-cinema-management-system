@@ -1,0 +1,26 @@
+<div class="row justify-content-md-center my-4">
+    <div class="col-4">
+            <h1 class="display-5">User Info</h1>
+                <form action="/users/userData/performAddNewUser/<%= user.id %>" method="post">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" value="<%= user.username %>">
+                    </div>
+                        <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name="password" class="form-control" value="<%= user.password %>" id="exampleInputPassword1">
+                    </div>
+                        <div class="form-group">
+                        <label for="createDate">Created date</label>
+                    <input type="text" name="createDate" class="form-control" value="<%= user.createDate %> " id="createDate">
+                    </div>
+                    <% if(user.id != 0) {%>
+                    <div class="form-group">
+                        <label for="numOfTransactions">Number of transactions</label>
+                        <input type="text" name="numOfTransactions" class="form-control" value="<%= user.numOfTransactions %> " id="numOfTransactions">
+                    </div>
+                    <% } %>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+    </div>
+</div>
