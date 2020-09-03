@@ -20,7 +20,6 @@ module.exports.processAndDisplay = async (req,res,next) => {
              genres : movie.genre, language : movie.language,
             url : null }; });
     }
-        res.path
         res.render('layout', { page: "movies/movieData", isAdmin : req.session.isAdmin, data : { id : displayMovieDetails[0].id,
             genres : displayMovieDetails[0].genres,
             language : displayMovieDetails[0].language,
