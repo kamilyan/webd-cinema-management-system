@@ -1,7 +1,7 @@
 <div class="row justify-content-md-center my-4">
     <div class="col-4">
             <h1 class="display-5">User Info</h1>
-                <form action="/users/userData/performAddNewUser/<%= user.id %>" method="post">
+                <form autocomplete="off" action="/users/userData/performAddNewUser/<%= user.id %>" method="post">
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="text" class="form-control" id="username" name="username" value="<%= user.username %>">
