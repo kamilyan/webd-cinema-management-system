@@ -1,1 +1,1 @@
-{"users":[{"id":0,"username":"Maor Kamilyan","password":"1234","createDate":"13-08-2020","numOfTransactions":-1},{"id":3,"username":"Yaron","password":"1234","createDate":" 20-20-2020","numOfTransactions":"3"}]}
+{"users":[{"id":0,"username":"admin","password":"admin","createDate":"13-08-2020","numOfTransactions":-1},{"id":3,"username":"Yaron","password":"1234","createDate":" 20-20-2020 ","numOfTransactions":"3 "},{"id":3,"username":"Dor","password":"1234","createDate":"30-20-20","numOfTransactions":"5"}]}

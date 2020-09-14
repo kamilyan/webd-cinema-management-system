@@ -2,7 +2,7 @@ const usersDataFile = require('../../models/dals/usersDataFile');
 
 module.exports.displayUsers =  async (req,res,next) => {
         let usersList = await usersDataFile.getUsers();
-
+        usersList.users.shift();
         res.render('layout', { page: 'users/usersManagement' ,isAdmin: req.session.isAdmin, users : usersList.users})
 }
 

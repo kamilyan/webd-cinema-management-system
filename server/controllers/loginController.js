@@ -19,7 +19,7 @@ module.exports.processAuthentication = async function(req, res, next) {
         }
         else {
                 // check if the user is admin.
-                req.session.isAdmin = currentUser.username === "Maor Kamilyan" ? true : false;
+                req.session.isAdmin = currentUser.username === "admin" ? true : false;
                 req.session.isAuthenticated = true;
                 req.session.numOfTransactions = currentUser.numOfTransactions;
                 res.redirect("/menu");
